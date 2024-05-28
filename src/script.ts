@@ -1,8 +1,8 @@
-const clientId = import.meta.env.CLIENT_ID; // Replace with your client id
+const clientId = import.meta.env.VITE_CLIENT_ID; // Replace with your client id
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
-const userId = import.meta.env.USER_ID;
+const userId = import.meta.env.VITE_USER_ID;
 const playlistId = "0hiyrHTj0fN2utROshs3SW"; // my main playlist
 
 if (!code) {
